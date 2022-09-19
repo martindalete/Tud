@@ -4,7 +4,6 @@ import random
 
 st.experimental_memo.clear()
 st.set_page_config(page_title="Tud is")
-st.title("Tud is a ")
 
 nouns = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/91Knouns.txt", header = None, names = ['Noun'])
 adverbs = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/6Kadverbs.txt", header = None, names = ['Adverb'])
