@@ -11,10 +11,11 @@ adverbs = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/
 adjectives = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/28K adjectives.txt", header = None, names = ['Adjective'])
 
 def display_button():
-  st.button('What is Tud?'):
+  st.button('What is Tud?')
   st.write('Tud is a ' + adverbs.iloc[random.randint(0,len(adverbs))]['Adverb'] + 
            ' ' + 
            adjectives.iloc[random.randint(0,len(adjectives))]['Adjective'] + 
            ' ' + 
            nouns.iloc[random.randint(0,len(nouns))]['Noun'] + 
            '.')
+display_button()
