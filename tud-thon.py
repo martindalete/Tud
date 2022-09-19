@@ -10,7 +10,8 @@ nouns = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/91
 adverbs = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/nouns\6K adverbs.txt", header = None, names = ['Adverb'])
 adjectives = pd.read_csv(r"https://raw.githubusercontent.com/martindalete/Tud/main/28K adjectives.txt", header = None, names = ['Adjective'])
 
-if st.button('What is Tud?'):
+def display_button():
+  st.button('What is Tud?'):
   st.write('Tud is a ' + adverbs.iloc[random.randint(0,len(adverbs))]['Adverb'] + 
            ' ' + 
            adjectives.iloc[random.randint(0,len(adjectives))]['Adjective'] + 
